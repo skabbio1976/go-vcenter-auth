@@ -169,6 +169,11 @@ To clear the cache, call `ClearCache()`.
 
 See the [examples](examples/) directory for complete working examples.
 
+## Acknowledgments
+
+Special thanks to:
+- **[alexbrainman](https://github.com/alexbrainman)** for the excellent [sspi](https://github.com/alexbrainman/sspi) package, which makes the Windows SSPI/Kerberos authentication possible and smooth. Without this library, the seamless single sign-on experience would not have been achievable.
+
 ## License
 
 MIT License
