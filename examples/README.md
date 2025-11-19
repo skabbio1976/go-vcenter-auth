@@ -4,7 +4,7 @@ This directory contains example programs demonstrating how to use go-vcenter-aut
 
 ## Basic Login Example
 
-`basic_login.go` - Demonstrates username/password authentication.
+`basic-login/` - Demonstrates username/password authentication.
 
 ### Running:
 
@@ -13,19 +13,31 @@ export VCENTER_HOST="vcenter.example.com"
 export VCENTER_USERNAME="administrator@vsphere.local"
 export VCENTER_PASSWORD="your-password"
 
-go run basic_login.go
+cd basic-login
+go run main.go
+```
+
+Or from the examples directory:
+```bash
+go run ./basic-login
 ```
 
 ## SSPI Login Example (Windows only)
 
-`sspi_login.go` - Demonstrates Windows integrated authentication using current user's credentials.
+`sspi-login/` - Demonstrates Windows integrated authentication using current user's credentials.
 
 ### Running:
 
 ```bash
 export VCENTER_HOST="vcenter.example.com"
 
-go run sspi_login.go
+cd sspi-login
+go run main.go
+```
+
+Or from the examples directory:
+```bash
+go run ./sspi-login
 ```
 
 **Note:** This example only works on Windows and requires the current user to have access to the vCenter server via Kerberos/SSPI.
